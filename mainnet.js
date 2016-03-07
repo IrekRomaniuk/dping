@@ -8,7 +8,7 @@ var cidrRange = require('cidr-range');
 var pingnet = require('./pingnet');
 var checknet = require('./checknet');
 
-var subnet = process.argv[2] || '1.1.1.0/25';
+var subnet = process.argv[2] || '8.8.8.0/28';
 
 if (! checknet(subnet)) {
     console.log('CIDR format required, should be i.e 1.1.1.0/30 (default), where mask is between 16 and 30 ' );

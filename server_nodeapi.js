@@ -26,7 +26,7 @@ router.use(function(req, res, next) {
 });
 // test route to make sure everything is working (accessed at GET http://address:7777/api)
 router.get('/', function(req, res) {
-    res.json({ message: 'Welcome to dping api!' });
+    res.json({ message: 'Welcome to dping api version 0.0.1!' });
 });
 
 // more routes for our API will happen here
