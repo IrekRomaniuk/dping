@@ -12,7 +12,6 @@
     "ip": "*",
     "cidr-range": "*",
     "ws": "*",
-    "stream":"*",
     "lodash":"*"
   }
 }

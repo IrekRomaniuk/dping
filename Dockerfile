@@ -12,7 +12,7 @@ WORKDIR /home/dping
 # Install app dependencies
 COPY  package.json  /home/dping/
 RUN npm install
-COPY websocket.js mainnet.js pingnet.js server_nodeapi.js /home/dping/
+COPY websocket.js mainnet.js pingnet.js checknet.js server_nodeapi.js /home/dping/
 
 EXPOSE 7777
 CMD [ "npm", "start" ]

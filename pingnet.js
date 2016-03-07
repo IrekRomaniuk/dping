@@ -18,14 +18,11 @@ function pingnet (targets, callback) {
     var session = ping.createSession(options);
     targets.forEach(function (target) {
             session.pingHost(target, function (error, traget, sent, rcvd) {
-                //counterPinged++;
                 var ms = rcvd - sent;
                 if (error) {
-                    //console.log(host + ": " + error.toString());
                     counterDead++;
                 }
                 else {
-                    //console.log(host + ": Alive");
                     counterReplied++;
                     callback(counterReplied, ms, target);
                 }
