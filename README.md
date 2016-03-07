@@ -27,7 +27,7 @@ Replied: 9/14 51ms 98.139.183.13
 
 #### Websocket API
 ```
-$ wscat -c http://host-address:7777
+$ wscat -c http://address-of-host-running-dping-container:7777
 connected (press CTRL+C to quit)
   < Send me CIDR subnet, i.e 8.8.8.0/28, where mask is between 16 and 30 
 > what ?
