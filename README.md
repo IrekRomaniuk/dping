@@ -1,5 +1,5 @@
 # Docker Ping Container - dping
-### based on npm net-ping
+### Based on npm net-ping
 
 #### Docker usage
 ##### dping will ping subnets in CIDR format, with mask between 16 and 30
