@@ -2,8 +2,8 @@
 ### Based on npm [net-ping](https://github.com/stephenwvickers/node-net-ping) by Stephen Vickers
 
 #### Container use:
-Pull 'dping' image from 'niuk' repository on docker hub and scan subnet 98.139.183.0/28 (command 'node dping')
-Subnet has to be given in CIDR format, with mask between 16 and 30
+Pull 'dping' image from 'niuk' repository on docker hub and scan subnet 98.139.183.0/28 (command 'node dping').
+Subnet has to be given in CIDR format, with mask between 16 and 30.
 Container name will be 'dping'
 
 ```
@@ -29,7 +29,7 @@ Run 'dping' with port 7777 exposed for websocket
 docker run -h dping --name dping -d -p 7777:7777 niuk/dping
 ```
 
-'dping' will ping subnet 8.8.8.0/28 be default (if omitted)
+'dping' will ping subnet 8.8.8.0/28 be default (if argument omitted from command 'node dping')
 
 ```
 $ docker exec dping node dping.js
