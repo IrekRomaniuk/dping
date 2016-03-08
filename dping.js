@@ -1,3 +1,4 @@
+#!/usr/local/bin/node
 /**
  * Created by IrekRomaniuk on 3/6/2016.
  */

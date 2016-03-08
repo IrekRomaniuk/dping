@@ -1,7 +1,11 @@
 # Docker Ping Container - dping
 ### Based on npm [net-ping](https://github.com/stephenwvickers/node-net-ping) by Stephen Vickers
 
-#### Docker usage
+#### Docker install:
+```
+d.sh
+```
+#### Docker usage:
 ##### dping will ping subnets in CIDR format, with mask between 16 and 30
 ```
 Pinging default 8.8.8.0/28 subnet:
