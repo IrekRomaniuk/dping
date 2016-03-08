@@ -28,7 +28,8 @@ exports.connect = function (server) {
                 var targets = cidrRange(message,{onlyHosts:true});
                 exports.broadcast('Pinging ' + message + ' with ' + targets.length + ' hosts from ' + source);
                 pingnet(targets
-                 , function (Replied, Pinged, Host){exports.broadcast(JSON.stringify('Replied: '+ Replied + '/' + Pinged + ' ' + Host));
+                 , function (Replied, Pinged,ms, Host){exports.broadcast(JSON.stringify
+                    ('Replied: '+ Replied + '/' + Pinged + ' ' +  ms + 'ms ' + Host));
                  });
             }
             else
