@@ -5,7 +5,7 @@ var ping = require('net-ping');
 module.exports =
 //pingnet(targets);
 function pingnet (targets, callback) {
-    var counterReplied = 0, counterDead = 0;
+    var counterReplied = 0, counterDead = 0, counterPinged = 0;
 // Default options
     var options = {
         networkProtocol: ping.NetworkProtocol.IPv4,
@@ -17,6 +17,7 @@ function pingnet (targets, callback) {
     };
     var session = ping.createSession(options);
     targets.forEach(function (target) {
+        counterPinged++;
             session.pingHost(target, function (error, traget, sent, rcvd) {
                 var ms = rcvd - sent;
                 if (error) {
@@ -24,7 +25,7 @@ function pingnet (targets, callback) {
                 }
                 else {
                     counterReplied++;
-                    callback(counterReplied, ms, target);
+                    callback(counterReplied, counterPinged, ms, target);
                 }
             });
         });
