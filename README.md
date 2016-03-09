@@ -67,3 +67,8 @@ connected (press CTRL+C to quit)
   < "Replied: 1/12 8.8.8.8"
 > 
 ```
+
+#### Using d.sh for install and run
+```
+rm -Rf dping; git clone https://github.com/IrekRomaniuk/dping.git; cd dping; chmod +x d.sh; ./d.sh
+```
