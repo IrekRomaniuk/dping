@@ -68,7 +68,7 @@ connected (press CTRL+C to quit)
 > 
 ```
 
-#### Using d.sh for install and run
+#### Using d.sh to install and run dping
 ```
-rm -Rf dping; git clone https://github.com/IrekRomaniuk/dping.git; cd dping; chmod +x d.sh; ./d.sh
+$rm -Rf dping; git clone https://github.com/IrekRomaniuk/dping.git; cd dping; chmod +x d.sh; ./d.sh
 ```
